@@ -22,7 +22,7 @@ const PDFChatBotUI = () => {
       filesArray.forEach((file) => formData.append("pdfs", file));
 
       try {
-        const response = await fetch("http://localhost:5000/upload", {
+        const response = await fetch("https://pdfchatbotui.onrender.com/upload", {
           method: "POST",
           body: formData,
         });
