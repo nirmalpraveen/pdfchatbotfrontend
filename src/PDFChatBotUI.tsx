@@ -49,7 +49,7 @@ const PDFChatBotUI = () => {
     setQuestion(""); // Clear input *before* sending, for better UX
 
     try {
-      const response = await fetch("http://localhost:5000/ask", {
+      const response = await fetch("https://pdfchatbotui.onrender.com/ask", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
